@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADNSU Library</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <div class="logo">
+          <img src="./Images/ADNSU_new_logo.png" alt="adnsu-logo" />
+        </div>
+        <div class="nav-text">
+          <p>
+            <i>Kitabxana insan ruhunun bütün zənginliklərinin xəzinəsidir!</i>
+          </p>
+        </div>
+      </div>
+    </header>
+    <section id="about">
+      <div class="search-container">
+          <div class="filter-container">
+            <div class="dropdown-container">
+              <select class="dropdown" id="filterByJanr">
+                <option value="all" selected disabled>Janrı seçin:</option>
+                <option value="bestseller">Bestseller</option>
+                <option value="fantastika">Fantastika</option>
+                <option value="detektiv">Detektiv</option>
+                <option value="şəxsi inkişaf">Şəxsi inkişaf və motivasiya</option>
+                <option value="marketinq">Marketinq</option>
+                <option value="psixologiya">Psixologiya</option>
+                <option value="fəlsəfə">Fəlsəfə</option>
+                <option value="memuar">Memuar və bioqrafiya</option>
+                <option value="ingilis">İngilis dilində olan kitablar</option>
+                <option value="rus dili">Rus dilində olan kitablar</option>
+                <option value="türk">Türk dilində olan kitablar</option>
+                <option value="tarix">Tarix</option>
+                <option value="siyasət">Siyasət</option>
+                <option value="azərbaycan">Azərbaycan klassikləri</option>
+                <option value="poeziya">poeziya</option>
+                <option value="dünya">Dünya klassikləri</option>
+                <option value="elmi ">Elmi ədəbiyyat</option>
+              </select>
+              <p class="feedback-content first-feedback"><a href="https://forms.gle/cuxCLYgVBDLdsP8n8" target="_blank">Sorğu</a></p>
+            </div>
+            <form >
+              <input type="text" id="search-input" placeholder="Kitabın adını yazın"/>
+              <button id="search-button" type="submit">Search</button>
+            </form>
+            <div class="feedback">
+              <p class="feedback-content second-feedback"><a href="https://forms.gle/cuxCLYgVBDLdsP8n8" target="_blank">Sorğu</a></p>
+            </div>
+          </div>
+          <table id="book-list">
+              <thead>
+                  <tr>
+                      <th>Kitabın adı</th>
+                      <th>Müəllifi</th>
+                  </th>
+              </thead>
+              <tbody id="list-body">
+                  
+              </tbody>
+          </table>
+      </div>
+    </section>
+
+    <script src="./js/searchBook.js"></script>
+  </body>
+</html>
